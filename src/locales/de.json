@@ -1,8 +1,5 @@
 {
   "general": {
-    "accessibility": {
-      "skip_to_content": "Direkt zum Inhalt"
-    },
     "meta": {
       "tags": "Getaggt \"{{ tags }}\"",
       "page": "Seite {{ page }}"
@@ -12,20 +9,32 @@
       "subtext_html": "Die von Ihnen angeforderte Seite existiert nicht. Klicken Sie <a href=\"/collections/all\">hier</a>, um den Einkauf fortzusetzen."
     },
     "password_page": {
-      "opening_soon": "Eröffnet demnächst",
-      "spread_the_word": "Weitersagen",
-      "login_form_heading": "Shop mit Passwort betreten",
+      "login_form_heading": "Shop mit Passwort betreten:",
       "login_form_password_label": "Passwort",
       "login_form_password_placeholder": "Ihr Passwort",
       "login_form_submit": "Betreten",
-      "signup_form_heading": "Finden Sie heraus, wann wir eröffnen",
       "signup_form_email_label": "E-Mail",
-      "signup_form_email_placeholder": "Ihre E-Mail-Adresse",
-      "signup_form_submit": "Abschicken",
       "signup_form_success": "Wir senden Ihnen eine E-Mail, kurz bevor wir eröffnen!",
-      "admin_link_html": "Sind Sie der Geschäftsinhaber? <a href=\"/admin\">Melden Sie sich hier an</a>",
+      "admin_link_html": "Sind Sie der Geschäftsinhaber? <a href=\"/admin\" class=\"text-link\">Melden Sie sich hier an</a>",
       "password_link": "Mit Passwort betreten",
-      "powered_by_shopify_html": "Dieser Shop wird mit Hilfe von {{ shopify }} betrieben werden"
+      "powered_by_shopify_html": "Dieser Shop wird mit Hilfe von {{ shopify }} betrieben werden",
+      "close": "Schließen (Esc)"
+    },
+    "breadcrumbs": {
+      "home": "Startseite",
+      "home_link_title": "Zurück zur Startseite"
+    },
+    "newsletter_form": {
+      "newsletter_email": "ihre-email@beispiel.com",
+      "submit": "Abonnieren",
+      "confirmation": "Danke fürs Anmelden"
+    },
+    "search": {
+      "no_results_html": "Ihre Suche nach \"{{ terms }}\" hat keine Ergebnisse hervorgebracht.",
+      "results_for_html": "Ihre Suche nach \"{{ terms }}\" hat folgende Ergebnisse hervorgebracht:",
+      "title": "Suchen Sie auf unserer Seite nach Produkten",
+      "placeholder": "Durchsuchen Sie unseren Shop",
+      "submit": "Suchen"
     },
     "social": {
       "share_on_facebook": "Teilen",
@@ -36,19 +45,15 @@
         "share_on_twitter": "Auf Twitter twittern",
         "share_on_pinterest": "Auf Pinterest pinnen"
       }
-    },
-    "search": {
-      "no_results_html": "Ihre Suche nach \"{{ terms }}\" hat keine Ergebnisse hervorgebracht.",
-      "results_for_html": "Ihre Suche nach \"{{ terms }}\" hat folgende Ergebnisse hervorgebracht:",
-      "title": "Suchen Sie auf unserer Seite nach Produkten",
-      "placeholder": "Durchsuchen Sie unseren Shop",
-      "submit": "Suchen"
     }
   },
   "blogs": {
     "article": {
-      "author_on_date_html": "Geposted von {{ author }} am {{ date }}",
+      "older_post": "Älterer Post",
+      "newer_post": "Neuerer Post",
+      "tags": "Tags",
       "comment_meta_html": "{{ author }} am {{ date }}",
+      "view_all": "Alle anzeigen",
       "read_more": "Weiterlesen"
     },
     "comments": {
@@ -59,13 +64,10 @@
       "post": "Kommentar posten",
       "moderated": "Bitte beachten Sie, dass Kommentare vor der Veröffentlichung freigegeben werden müssen",
       "success_moderated": "Ihr Kommentar wurde erfolgreich gepostet. Da unser Blog moderiert wird, werden wir ihn erst kurze Zeit später veröffentlichen.",
-      "success": "Ihr Kommentar wurde erfolgreich gepostet. Danke!",
-      "with_count": {
-        "one": "{{ count }} Kommentar",
-        "other": "{{ count }} Kommentare"
-      }
+      "success": "Ihr Kommentar wurde erfolgreich gepostet. Danke!"
     },
-    "general": {
+    "sidebar": {
+      "recent_articles": "Neueste Artikel",
       "categories": "Kategorien"
     }
   },
@@ -75,28 +77,40 @@
       "remove": "Entfernen",
       "note": "Besondere Hinweise an den Verkäufer",
       "subtotal": "Zwischensumme",
-      "shipping_at_checkout": "Liefer- und Preisnachlässe an der Kasse berechnet",
+      "savings_html": "Sie sparen {{ price }}",
+      "shipping_at_checkout": "Rabattcodes, Versandkosten und Steuern werden bei der Bezahlung berechnet.",
       "update": "Einkaufswagen aktualisieren",
       "checkout": "Zur Kasse",
       "empty": "Ihr Einkaufswagen ist im Moment leer.",
       "cookies_required": "Aktivieren Sie Cookies, um den Einkaufswagen benutzen zu können",
       "continue_browsing_html": "Mit der Suche <a href=\"/collections/all\">hier</a> fortfahren.",
-      "item_quantity": "Produktmenge",
-      "savings": "Sie sparen"
+      "continue_shopping": "Weiter einkaufen"
     },
     "label": {
-      "product": "Artikel",
       "price": "Preis",
       "quantity": "Menge",
       "total": "Gesamt",
-      "discounted_price": "ermäßigter Preis",
-      "original_price": "Originalpreis"
+      "add_note": "Einen Hinweis zu Ihrer Bestellung hinzufügen"
     }
   },
   "collections": {
     "general": {
+      "title": "Zusammenstellungen",
       "no_matches": "Es tut uns leid, aber Ihre Suche nach Produkten hat keine Treffer ergeben.",
       "link_title": "Durchsuchen Sie unsere {{ title }}-Zusammenstellung"
+    },
+    "sorting": {
+      "title": "Sortieren nach",
+      "browse": "Durchsuchen",
+      "all_tags": "Alle",
+      "featured": "Ausgewählt",
+      "best_selling": "Meistverkauft",
+      "az": "Alphabetisch, A-Z",
+      "za": "Alphabetisch, Z-A",
+      "price_ascending": "Preis, niedrig nach hoch",
+      "price_descending": "Preis, hoch nach niedrig",
+      "date_descending": "Datum, neu nach alt",
+      "date_ascending": "Datum, alt nach neu"
     }
   },
   "contact": {
@@ -184,7 +198,8 @@
       "quantity": "Menge",
       "total": "Gesamt",
       "fulfilled_at": "Geliefert am {{ date }}",
-      "subtotal": "Zwischensumme"
+      "subtotal": "Zwischensumme",
+      "track_shipment": "Sendung verfolgen"
     },
     "recover_password": {
       "title": "Passwort zurücksetzen",
@@ -211,44 +226,68 @@
       "cancel": "Zurück zum Shop"
     }
   },
-  "homepage": {
+  "home_page": {
     "onboarding": {
+      "product_vendor": "Der Produktverkäufer",
       "product_title": "Beispielhafter Produkttitel",
-      "collection_title": "Beispielhafter Zusammenstellungstitel",
-      "no_content": "Dieser Bereich hat zur Zeit keinen Inhalt. Füge diesem Bereich über die Seitenleiste Inhalte hinzu."
+      "blog_title": "Der Titel Ihres Posts",
+      "blog_excerpt": "Ihr Laden hat noch keine Blogposts veröffentlicht. Ein Blog kann genutzt werden, um über die Einführung neuer Produkte, Tipps oder andere Neuigkeiten, die Sie mit Ihren Kunden teilen möchten, zu berichten. Für Inspiration und Ratschläge für Ihren eigenen Laden und Blog können Sie den E-Commerce-Blog von Shopify besuchen.",
+      "collection_title": "Beispielhafter Zusammenstellungstitel"
     }
   },
   "layout": {
+    "navigation": {
+      "menu": "Menü"
+    },
     "cart": {
-      "title": "Einkaufswagen",
-      "items_count": {
-        "one": "Produkt",
-        "other": "Produkte"
-      }
+      "title": "Einkaufswagen"
     },
     "customer": {
-      "account": "Account",
-      "logged_in_as_html": "Eingeloggt als {{ first_name }}",
+      "account": "Mein Account",
       "log_out": "Ausloggen",
       "log_in": "Einloggen",
-      "create_account": "Account erstellen"
+      "create_account": "Account erstellen",
+      "or": "oder"
     },
     "footer": {
+      "blog_title": "Neueste Nachrichten",
+      "social_title": "Bleiben Sie auf dem Laufenden",
       "social_platform": "{{ name }} auf {{ platform }}",
-      "copyright": "Urheberrecht",
-      "payment_methods": "Akzeptierte Zahlungsarten"
+      "newsletter_title": "Newsletter",
+      "newsletter_caption": "Melden Sie sich für Werbeaktionen",
+      "copyright": "Urheberrecht"
     }
   },
   "products": {
+    "general": {
+      "from_html": "Von {{ price }}",
+      "share_title": "Diesen Artikel teilen",
+      "related_products_title": "Mehr aus dieser Sammlung"
+    },
     "product": {
-      "regular_price": "Normaler Preis",
       "sold_out": "Ausverkauft",
+      "sale": "Angebot",
       "unavailable": "Nicht verfügbar",
-      "on_sale": "Im Angebot",
-      "on_sale_from_html": "Im Angebot ab {{ price }}",
-      "from_text_html": "Von {{ price }}",
+      "compare_at": "Vergleichen bei",
       "quantity": "Menge",
-      "add_to_cart": "In den Einkaufswagen legen"
+      "add_to_cart": "In den Einkaufswagen legen",
+      "sale_price": "Sonderpreis",
+      "regular_price": "Normaler Preis",
+      "description": "Beschreibung",
+      "full_details": "Alle Einzelheiten"
+    },
+    "zoom": {
+      "next": "Nächste (Rechte Pfeiltaste)",
+      "prev": "Vorige (Linke Pfeiltaste)",
+      "close": "Schließen (Esc)"
+    }
+  },
+  "map": {
+    "errors": {
+      "address_error": "Kann die Adresse nicht finden",
+      "address_no_results": "Keine Ergebnisse für diese Adresse",
+      "address_query_limit_html": "Sie haben die Google- API-Nutzungsgrenze überschritten. Betrachten wir zu einem <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium-Paket</a> zu aktualisieren.",
+      "auth_error_html": "Es gab ein Problem bei Google Maps API Konto zu authentifizieren."
     }
   },
   "gift_cards": {
@@ -261,11 +300,10 @@
       "redeem": "Nutzen Sie an der Kasse diesen Code, um Ihre Geschenkkarte einzulösen",
       "shop_link": "Einkauf beginnen",
       "print": "Drucken",
-      "remaining_html": "{{ balance }} übrig",
       "add_to_apple_wallet": "Hinzufügen zu Apple Wallet"
     }
   },
   "date_formats":{
-    "month_day_year": "%B %d, %Y"
+    "month_day_year":"%B %d, %Y"
   }
 }
